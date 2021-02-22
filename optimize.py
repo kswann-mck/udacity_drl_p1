@@ -19,6 +19,20 @@ space = [Integer(32,64, name="batch_size"),
 
 
 def find_optimal_hyperparameters(env, brain_name):
+    """
+    Given an environment and unity brain_name, conduct a search for optimal hyperparameters, returning the optimal parameters
+    and the raw output from the optimization process:
+    
+    Parameters
+    ----------
+    env: UnityEnvironment, the banana environment.
+    brain_name: string, the name to associate with the model checkpoint
+
+    Returns
+    -------
+    (params: Dict, the list of parameters used for the optimal score, res_gp: the raw output from the optimizer)
+    
+    """
     
     @use_named_args(space)
     def objective(**params):

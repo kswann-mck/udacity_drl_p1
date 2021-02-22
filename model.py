@@ -1,3 +1,9 @@
+"""
+This model is an implementation of a Deep Q Network. The base model was taken from the solution here:
+https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn/solution.
+"""
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
