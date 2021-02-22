@@ -1,3 +1,10 @@
+"""
+This dqn_agent is an implementation of a Deep Q Network Agent. The base implementation was taken from the solution here:
+https://github.com/udacity/deep-reinforcement-learning/tree/master/dqn/solution.
+
+Some additional parameters were added to simplify searching for different optimal parameters.
+"""
+
 import numpy as np
 import random
 from collections import namedtuple, deque
